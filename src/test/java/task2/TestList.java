@@ -34,9 +34,18 @@ public class TestList {
                 .collect(Collectors.toList());
 
 
+        var a = student.stream()
+                .filter(st -> st.getAge() > 18)
+                .sorted(Comparator.comparing(Student::getGrade).reversed())
+                .map(Student::getName)
+                .collect(Collectors.toList());
+
         System.out.println("Найти всех студентов старше 18 лет: " + x);
         System.out.println("Отсортировать этих студентов по их среднему баллу в порядке убывания: " + y);
         System.out.println("Получить список имён студентов: " + z);
+
+        System.out.println(a);
+
 
     }
 
