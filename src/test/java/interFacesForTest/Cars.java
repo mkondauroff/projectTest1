@@ -1,6 +1,6 @@
 package interFacesForTest;
 
-public class Cars extends Transport{
+public class Cars extends Transport {
 
     @Override
     public void drive() {

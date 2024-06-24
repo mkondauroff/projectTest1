@@ -3,10 +3,11 @@ package interFacesForTest;
 public class Transport {
 
 
-    public void drive(){
+    public void drive() {
         System.out.println("ездить");
     }
-    public void plow () {
+
+    public void plow() {
         System.out.println("пахать");
     }
 

@@ -10,3 +10,4 @@ public class Animal {
         System.out.println("животное спит");
     }
 }
+
